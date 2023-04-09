@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>トランプ変換</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>No.<span id="count">1</span></h1>
+        <img src="img/c01.png" id="card-image">
+        <p>経過時間: <span id="elapsed-time">0</span>秒</p>
+        <label>
+            無限モード:
+            <input type="checkbox" id="infinite-mode">
+        </label><br>
+        <label>
+            自動スライドモード:
+            <input type="checkbox" id="auto-slide-mode">
+        </label><br>
+        <label>
+            スライド間隔:
+            <input type="number" id="slide-interval" min="0.1" max="10" step="0.1" value="1">
+        </label><br>
+        ※0.1~10までの半角数字を入力。例:2.6<br>
+        <button id="restart-button">リスタート</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
